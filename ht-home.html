@@ -1,0 +1,127 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=320px, initial-scale=1" />
+
+//head code
+    
+    <!-- Start GPT Tag -->
+    <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+    <script>
+      window.googletag = window.googletag || { cmd: [] };
+      googletag.cmd.push(function () {
+        const anchorSlot = googletag.defineOutOfPageSlot(
+          '/22218985137/healthtimes/ht_sticky',
+          googletag.enums.OutOfPageFormat.BOTTOM_ANCHOR
+        );
+
+        if (anchorSlot) {
+          anchorSlot.addService(googletag.pubads());
+        } else {
+          console.log("Anchor Slot Not available");
+        }
+
+        if (document.documentElement.clientWidth > 768) {
+          googletag
+            .defineSlot(
+              '/22218985137/ht_incontent1_desktop',
+              [[970, 250], [728, 90], 'fluid'],
+              'ht_incontent1'
+            )
+            .addService(googletag.pubads());
+          googletag
+            .defineSlot(
+              '/22218985137/ht_incontent2_desktop',
+              [[970, 250], [728, 90], 'fluid'],
+              'ht_incontent2'
+            )
+            .addService(googletag.pubads());
+
+          googletag
+            .defineSlot(
+              '/22218985137/ht_endcontent_desktop',
+              [[728, 90], [970, 250], 'fluid'],
+              'ht_endcontent'
+            )
+            .addService(googletag.pubads());
+          
+        } 
+        
+        
+        else {
+          googletag
+            .defineSlot(
+              '/22218985137/healthtimes/ht_incontent1_mobile',
+              [[300, 250], [336, 280], 'fluid'],
+              'ht_incontent1'
+            )
+            .addService(googletag.pubads());
+          googletag
+            .defineSlot(
+              '/22218985137/healthtimes/ht_incontent2_mobile',
+              [[300, 250], [336, 280], [300, 600], 'fluid'],
+              'ht_incontent2'
+            )
+            .addService(googletag.pubads());
+        
+          googletag
+            .defineSlot(
+              '/22218985137/healthtimes/ht_endcontent_mobile',
+              [[300, 250], [336, 280], 'fluid'],
+              'ht_endcontent'
+            )
+            .addService(googletag.pubads());
+        }
+        googletag.pubads().setTargeting('page', 'homepage');
+
+        googletag.pubads().enableSingleRequest();
+        googletag.pubads().setCentering(true);
+        googletag.pubads().enableLazyLoad();
+        googletag.enableServices();
+      });
+    </script>
+    <!-- End GPT Tag -->
+  </head>
+
+
+//BODY CODES
+
+
+  <body>
+
+    <!-- GPT AdSlot 1 -->
+    <div id="ht_incontent1">
+      <script>
+        googletag.cmd.push(function () {
+          googletag.display('ht_incontent1');
+        });
+      </script>
+    </div>
+    <!-- End AdSlot 1 -->
+
+    <!-- GPT AdSlot 2  -->
+    <div id="ht_incontent2">
+      <script>
+        googletag.cmd.push(function () {
+          googletag.display('ht_incontent2');
+        });
+      </script>
+    </div>
+     <!-- End AdSlot 2 -->
+    
+    
+
+      <!-- GPT AdSlot Endcontent -->
+    <div id="ht_endcontent">
+      <script>
+        googletag.cmd.push(function () {
+          googletag.display('ht_endcontent');
+        });
+      </script>
+    </div>
+      <!--End  GPT AdSlot Endcontent -->
+
+
+
+   
+  </body>
+</html>
