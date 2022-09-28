@@ -1,0 +1,159 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=320px, initial-scale=1" />
+
+
+    
+    <!-- Start GPT Tag -->
+    <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+    <script>
+      window.googletag = window.googletag || { cmd: [] };
+      googletag.cmd.push(function () {
+        const anchorSlot = googletag.defineOutOfPageSlot(
+          '/22218985137/at/at_sticky',
+          googletag.enums.OutOfPageFormat.BOTTOM_ANCHOR
+        );
+
+        if (anchorSlot) {
+          anchorSlot.addService(googletag.pubads());
+        } else {
+          console.log("Anchor Slot Not available");
+        }
+
+        if (document.documentElement.clientWidth > 768) {
+          googletag
+            .defineSlot(
+              '/22218985137/at/at_incontent1_desktop',
+              [[970, 250], [728, 90], 'fluid'],
+              'at_incontent1'
+            )
+            .addService(googletag.pubads());
+          googletag
+            .defineSlot(
+              '/22218985137/at/at_incontent2_desktop',
+              [[970, 250], [728, 90], 'fluid'],
+              'at_incontent2'
+            )
+            .addService(googletag.pubads());
+          googletag
+            .defineSlot(
+              '/22218985137/at/at_incontent3_desktop',
+              ['fluid', [970, 250], [728, 90]],
+              'at_incontent3'
+            )
+            .addService(googletag.pubads());
+          googletag
+            .defineSlot(
+              '/22218985137/at/at_endcontent_desktop',
+              [[728, 90], [970, 250], 'fluid'],
+              'at_endcontent'
+            )
+            .addService(googletag.pubads());
+          googletag
+            .defineSlot(
+              '/22218985137/at/at_rightcol_desktop',
+              [[300, 250], [300, 600], 'fluid'],
+              'at_rightcol_desktop'
+            )
+            .addService(googletag.pubads());
+        } 
+        
+        
+        else {
+          googletag
+            .defineSlot(
+              '/22218985137/at/at_incontent1_mobile',
+              [[300, 250], [336, 280], 'fluid'],
+              'at_incontent1'
+            )
+            .addService(googletag.pubads());
+          googletag
+            .defineSlot(
+              '/22218985137/at/at_incontent2_mobile',
+              [[300, 250], [336, 280], [300, 600], 'fluid'],
+              'at_incontent2'
+            )
+            .addService(googletag.pubads());
+          googletag
+            .defineSlot(
+              '/22218985137/at/at_incontent3_mobile',
+              [[300, 250], [336, 280], [300, 600], 'fluid'],
+              'at_incontent3'
+            )
+            .addService(googletag.pubads());
+          googletag
+            .defineSlot(
+              '/22218985137/at/at_endcontent_mobile',
+              [[300, 250], [336, 280], 'fluid'],
+              'at_endcontent'
+            )
+            .addService(googletag.pubads());
+        }
+
+        googletag.pubads().enableSingleRequest();
+        googletag.pubads().setCentering(true);
+        googletag.pubads().enableLazyLoad();
+        googletag.enableServices();
+      });
+    </script>
+    <!-- End GPT Tag -->
+  </head>
+
+  <body>
+
+    <!-- GPT AdSlot 1 -->
+    <div id="at_incontent1">
+      <script>
+        googletag.cmd.push(function () {
+          googletag.display('at_incontent1');
+        });
+      </script>
+    </div>
+    <!-- End AdSlot 1 -->
+
+    <!-- GPT AdSlot 2  -->
+    <div id="at_incontent2">
+      <script>
+        googletag.cmd.push(function () {
+          googletag.display('at_incontent2');
+        });
+      </script>
+    </div>
+     <!-- End AdSlot 2 -->
+    
+    
+     <!-- GPT AdSlot 3 -->
+    <div id="at_incontent3">
+      <script>
+        googletag.cmd.push(function () {
+          googletag.display('at_incontent3');
+        });
+      </script>
+    </div>
+    <!-- End AdSlot 3 -->
+
+      <!-- GPT AdSlot Endcontent -->
+    <div id="at_endcontent">
+      <script>
+        googletag.cmd.push(function () {
+          googletag.display('at_endcontent');
+        });
+      </script>
+    </div>
+      <!--End  GPT AdSlot Endcontent -->
+
+    <!--Right Sidebar-->
+
+    <!-- GPT AdSlot 5 for Ad unit 'at_rightcol_desktop' ### Size: [[300,250],[300,600],'fluid'] -->
+    <div id="at_rightcol_desktop">
+      <script>
+      if(document.documentElement.clientWidth > 768){
+        googletag.cmd.push(function () {
+          googletag.display('at_rightcol_desktop');
+        });
+      }
+      </script>
+    </div>
+    <!-- End AdSlot 5 -->
+  </body>
+</html>
