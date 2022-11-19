@@ -1,7 +1,7 @@
-<html>
+<html lang="en">
   <head>
-    <meta name="viewport" content="width=320px, initial-scale=1" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AT Article Page</title>
 
     
     <!-- Start GPT Tag -->
@@ -9,16 +9,16 @@
     <script>
       window.googletag = window.googletag || { cmd: [] };
       googletag.cmd.push(function () {
-        const anchorSlot = googletag.defineOutOfPageSlot(
-          '/22218985137/at/at_sticky',
-          googletag.enums.OutOfPageFormat.BOTTOM_ANCHOR
-        );
 
-        if (anchorSlot) {
-          anchorSlot.addService(googletag.pubads());
-        } else {
-          console.log("Anchor Slot Not available");
-        }
+        // Interstitial Slot
+
+        interstitialSlot = googletag.defineOutOfPageSlot(
+            '/22218985137/at/interstitial',
+            googletag.enums.OutOfPageFormat.INTERSTITIAL);
+
+        //sometimes interstitial return null
+        if (interstitialSlot) {
+          interstitialSlot.addService(googletag.pubads());
 
         if (document.documentElement.clientWidth > 768) {
           googletag
@@ -60,6 +60,17 @@
         
         
         else {
+          const anchorSlot = googletag.defineOutOfPageSlot(
+          '/22218985137/at/at_sticky',
+          googletag.enums.OutOfPageFormat.BOTTOM_ANCHOR
+        );
+
+        if (anchorSlot) {
+          anchorSlot.addService(googletag.pubads());
+        } else {
+          console.log("Anchor Slot Not available");
+        }  
+
           googletag
             .defineSlot(
               '/22218985137/at/at_incontent1_mobile',
@@ -96,6 +107,7 @@
         googletag.enableServices();
       });
     </script>
+    
     <!-- End GPT Tag -->
   </head>
 
