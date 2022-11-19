@@ -1,24 +1,24 @@
-<html lang="en">
+<html>
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>AT Article Page</title>
+    <meta name="viewport" content="width=320px, initial-scale=1" />
+
 
     
     <!-- Start GPT Tag -->
+    <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
     <script>
       window.googletag = window.googletag || { cmd: [] };
       googletag.cmd.push(function () {
 
-        // Interstitial Slot
-
-        const interstitialSlot = googletag.defineOutOfPageSlot(
-            '/22218985137/at/interstitial',
+        interstitialSlot = googletag.defineOutOfPageSlot(
+            '/6355419/Travel/Europe/France/Paris',
             googletag.enums.OutOfPageFormat.INTERSTITIAL);
 
-        //sometimes interstitial return null
+        // Slot returns null if the page or device does not support interstitials.
         if (interstitialSlot) {
           interstitialSlot.addService(googletag.pubads());
-
+        }
+      
         if (document.documentElement.clientWidth > 768) {
           googletag
             .defineSlot(
@@ -59,7 +59,8 @@
         
         
         else {
-          const anchorSlot = googletag.defineOutOfPageSlot(
+
+        const anchorSlot = googletag.defineOutOfPageSlot(
           '/22218985137/at/at_sticky',
           googletag.enums.OutOfPageFormat.BOTTOM_ANCHOR
         );
@@ -68,7 +69,8 @@
           anchorSlot.addService(googletag.pubads());
         } else {
           console.log("Anchor Slot Not available");
-        }  
+        }
+
 
           googletag
             .defineSlot(
@@ -104,11 +106,8 @@
         googletag.pubads().setCentering(true);
         googletag.pubads().enableLazyLoad();
         googletag.enableServices();
-      }});
-
+      });
     </script>
-
-
     <!-- End GPT Tag -->
   </head>
 
