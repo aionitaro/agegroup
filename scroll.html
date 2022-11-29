@@ -1,30 +1,50 @@
-<div id="at_incontent4">
-    <script>
-          googletag.cmd.push(function () {
-           
-            if (document.documentElement.clientWidth > 768) {  
-            
-            googletag
-            .defineSlot(
-              '/22218985137/pensiontimes/pt_incontent4_desktop',
-              [[970, 250], [728, 90], 'fluid'],
-              'pt_incontent4'
-            )
-            .addService(googletag.pubads()); }
-          
-
-            else {
-                googletag
-            .defineSlot(
-              '/22218985137/pensiontimes/pt_incontent4_mobile',
-              [[300, 250], [336, 280], [300, 600], 'fluid'],
-              'pt_incontent4'
-            )
-            .addService(googletag.pubads()); }
-
-            }
-            
-        googletag.display('at_incontent4');
+<html>
+<head>
+     <!-- Start GPT Tag -->
+     <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+     <script>
+        window.googletag = window.googletag || { cmd: [] };
+        googletag.cmd.push(function () {
+        googletag.pubads().setTargeting('page', 'homepage');
+        googletag.pubads().enableSingleRequest();
+        googletag.pubads().setCentering(true);
+        googletag.pubads().enableLazyLoad();
+        googletag.enableServices();
       });
     </script>
-  </div>
+
+     
+</head>
+<body>
+    <div id="pt_incontent4">
+        <script>
+              googletag.cmd.push(function () {
+               
+                if (document.documentElement.clientWidth > 768) {  
+                
+                googletag
+                .defineSlot(
+                  '/22218985137/pensiontimes/pt_incontent4_desktop',
+                  [[970, 250], [728, 90], 'fluid'],
+                  'pt_incontent4'
+                )
+                .addService(googletag.pubads()); }
+              
+    
+                else {
+                    googletag
+                .defineSlot(
+                  '/22218985137/pensiontimes/pt_incontent4_mobile',
+                  [[300, 250], [336, 280], [300, 600], 'fluid'],
+                  'pt_incontent4'
+                )
+                .addService(googletag.pubads()); }
+    
+               
+                
+            googletag.display('pt_incontent4');
+          });
+        </script>
+      </div>
+    </body>
+</html>
