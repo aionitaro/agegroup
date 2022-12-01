@@ -11,6 +11,8 @@
       window.googletag = window.googletag || { cmd: [] };
       googletag.cmd.push(function () {
 
+        googletag.pubads().disableInitialLoad();
+
         interstitialSlot = googletag.defineOutOfPageSlot(
             '/22218985137/at/interstitial',
             googletag.enums.OutOfPageFormat.INTERSTITIAL);
