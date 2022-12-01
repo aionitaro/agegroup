@@ -7,7 +7,7 @@
     <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
     <script>
       window.googletag = window.googletag || { cmd: [] };
-      googletag.pubads().disableInitialLoad();
+  
       googletag.cmd.push(function () {
         const anchorSlot = googletag.defineOutOfPageSlot(
           '/22218985137/pensiontimes/pt_sticky',
@@ -89,7 +89,7 @@
             )
             .addService(googletag.pubads());
         }
-
+        googletag.pubads().disableInitialLoad();
         googletag.pubads().enableSingleRequest();
         googletag.pubads().setTargeting('subcategory', 'travel-insurance');
         googletag.pubads().setCentering(true);
