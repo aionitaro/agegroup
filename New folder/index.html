@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/openplayerjs@latest/dist/openplayer.min.css" />
+    </head>
+    <body>
+        <video class="op-player__media" id="player" controls playsinline>
+            <source src="https://glomex.github.io/vast-ima-player/big-buck-bunny.mp4" type="video/mp4" />
+            <track kind="subtitles" src="/path/to/video.vtt" srclang="en" label="English" />
+        </video>
+        <script src="https://cdn.jsdelivr.net/npm/openplayerjs@latest/dist/openplayer.min.js"></script>
+        <script>
+            // Check the `API and events` link below for more options
+            const player = new OpenPlayerJS('player');
+            player.init();
+        </script>
+    </body>
+</html>
