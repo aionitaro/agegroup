@@ -3,7 +3,7 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/openplayerjs@latest/dist/openplayer.min.css" />
     </head>
     <body>
-        <video class="op-player__media" id="outstream" controls playsinline  muted autoplay>
+        <video class="op-player__media" id="outstream" controls playsinline  muted autoplay	>
             <source src="https://glomex.github.io/vast-ima-player/big-buck-bunny.mp4" type="video/mp4" />
         </video>
         <script src="https://cdn.jsdelivr.net/npm/openplayerjs@latest/dist/openplayer.min.js"></script>
@@ -11,7 +11,7 @@
             // Check the `API and events` link below for more options
             const outstream = new OpenPlayerJS('outstream', {
 				ads: {
-						src: 'https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&iu=/124319096/external/single_ad_samples&ciu_szs=300x250&impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=1&cust_params=deployment%3Ddevsite%26sample_ct%3Dlinear&correlator='
+						src: 'https://pubads.g.doubleclick.net/gampad/ads?iu=/43606300,22218985137/AAG_Agetimes_Dir_Mob_VidAdIn_Lis_MC_CTP&description_url=[placeholder]&tfcd=0&npa=0&ad_type=audio_video&sz=300x168&gdfp_req=1&output=vast&unviewed_position_start=1&env=vp&impl=s&correlator=[cachebuster]&nofb=1'
 					},
 			});
             outstream.init();
