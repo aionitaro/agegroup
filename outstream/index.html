@@ -3,14 +3,17 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/openplayerjs@latest/dist/openplayer.min.css" />
     </head>
     <body>
-        <video class="op-player__media" id="player" controls playsinline>
+        <video class="op-player__media" id="outstream" controls playsinline>
             <source src="https://glomex.github.io/vast-ima-player/big-buck-bunny.mp4" type="video/mp4" />
-            <track kind="subtitles" src="/path/to/video.vtt" srclang="en" label="English" />
         </video>
         <script src="https://cdn.jsdelivr.net/npm/openplayerjs@latest/dist/openplayer.min.js"></script>
         <script>
             // Check the `API and events` link below for more options
-            const player = new OpenPlayerJS('player');
+            const outstream = new OpenPlayerJS('outstream', {
+				ads: {
+						src: 'https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&iu=/124319096/external/single_ad_samples&ciu_szs=300x250&impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=1&cust_params=deployment%3Ddevsite%26sample_ct%3Dlinear&correlator='
+					},
+			});
             player.init();
         </script>
     </body>
